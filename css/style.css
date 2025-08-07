@@ -1,5 +1,9 @@
+@font-face {
+    font-family: algerian ;
+    src: url(/fonts/algerian.ttf);
+}
 * {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-decoration: none;
     box-sizing: border-box;
     margin: 0px;
@@ -17,8 +21,18 @@ body {
     box-shadow: 0px 0px 6px #dcdcdc;
 }
 .logo {
-    width: 250px;
+    width: 70px;
     margin: 8px;
+}
+.logod {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.logod h1 {
+    color: #060440;
+    font-family: algerian;
+    font-size: 30px;
 }
 .navegaçao {
     display: flex;
@@ -89,18 +103,19 @@ body {
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
-    box-shadow: 0px 0px 6px #dcdcdc;
     border-radius: 9px;
     text-align: center;
     padding: 10px;
     background-color: #F5F5F5;
     transition: 0.3s ease;
+    box-shadow: 0px 0px 6px #a2a2a2;
 }
 .Titulo:hover {
     transform:rotateY(10deg) rotateX(10deg);
 }
 .destaque {
     color:#100b6d;
+    font-family: algerian;
 }
 .Titulo p {
     width: 90%;
@@ -160,7 +175,7 @@ body {
 }
 .diferenciais {
     background-color: #F5F5F5;
-    box-shadow: 0px 0px 6px #dcdcdc;
+    box-shadow: 0px 0px 6px #a2a2a2;
     display: flex;
     flex-wrap: wrap;
     justify-content:space-evenly;
@@ -258,6 +273,7 @@ body {
     padding: 40px 20px;
     width: 100%;
     margin: -8px;
+    box-shadow: 0px 0px 6px #dcdcdc;
 }
 
 .footer-container {
@@ -321,8 +337,16 @@ body {
         }
 
     .logo {
-        width: 180px;
-        margin: 0;
+        width: 50px;
+        margin: 8px;
+    }
+    .logod {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .logod {
+        font-size: 13px;
     }
 
     .navegaçao {
@@ -338,7 +362,9 @@ body {
         transition: max-height 0.4s ease-out;
         box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
         z-index: 99;
-        padding: 0 10px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
     }
     .menu-toggle:checked ~ .navegaçao {
         max-height: 300px;
@@ -423,113 +449,5 @@ body {
 
     .imgd {
         width: 80px;
-    }
-
-    .footer-container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 30px;
-    }
-
-    .social,
-    .contato2 {
-        width: 100%;
-        text-align: center;
-    }
-    .empresa {
-        width: 70%;
-       max-width: 100px;
-    }
-    .empresa img {
-        width: 200px;
-    }
-
-    .social img {
-        width: 35px;
-        margin: 8px;
-    }
-}
-@media (min-width: 769px) and (max-width: 1024px) {
-    .hamburger {
-        display: flex;
-    }
-    
-    * {
-        max-width: 100%;
-    }
-    .cabeçalho {
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        padding: 10px;
-        }
-
-    .logo {
-        width: 180px;
-        margin: 0;
-    }
-
-    .navegaçao {
-        position: absolute;
-        top: 80px;
-        right: 0;
-        width: 100%;
-        background-color: #F5F5F5;
-        flex-direction: column;
-        gap: 0;
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.4s ease-out;
-        box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
-        z-index: 99;
-        padding: 0 10px;
-    }
-    .menu-toggle:checked ~ .navegaçao {
-        max-height: 300px;
-        padding: 10px 10px 20px;
-    }
-    .links, .sobre {
-        opacity: 0;
-        transform: translateY(-10px);
-        transition: all 0.3 ease;
-        padding: 10px;
-        width: 100%;
-        text-align: center;
-        border-bottom: 1px solid #e0e0e0;
-    }
-    .menu-toggle:checked ~ .navegaçao .links,
-    .menu-toggle:checked ~ .navegaçao .sobre {
-        opacity: 1;
-        transform: translateY(0);
-    }
-    .sobre {
-        margin-top: 10px;
-        border-radius: 8px;
-    }
-    .linksb {
-        display: none;
-    }
-    .logo {
-        width: 220px;
-    }
-
-    .diferenciais {
-        width: 95%;
-        padding: 15px;
-    }
-
-    .diferencial1,
-    .diferencial2,
-    .diferencial3,
-    .diferencial4 {
-        width: 45%;
-        height: auto;
-    }
-
-    .Titulo p,
-    .beneficios p {
-        width: 90%;
-        font-size: 0.95rem;
     }
 }
