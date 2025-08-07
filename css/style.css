@@ -332,16 +332,13 @@ body {
         }
 
     .logo {
-        width: 50px;
+        width: 200px;
         margin: 8px;
     }
     .logod {
         display: flex;
         flex-direction: row;
         align-items: center;
-    }
-    .logod {
-        font-size: 13px;
     }
 
     .navegaçao {
