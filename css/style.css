@@ -345,9 +345,7 @@ body {
         position: absolute;
         top: 80px;
         right: 0;
-        width: 100%;
         background-color: #F5F5F5;
-        flex-direction: column;
         gap: 0;
         max-height: 0;
         overflow: hidden;
