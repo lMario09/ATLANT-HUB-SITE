@@ -562,6 +562,7 @@ a {
 
   * {
     max-width: 100%;
+    font-family: ro;
   }
   p {
     font-size: 20px;
@@ -674,10 +675,7 @@ a {
     max-width: 500px;
   }
 
-  .diferencial1,
-  .diferencial2,
-  .diferencial3,
-  .diferencial4 {
+  .diferencial {
     width: 90%;
     max-width: 400px;
     height: auto;
