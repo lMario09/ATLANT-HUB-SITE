@@ -45,10 +45,15 @@ body {
   transition: 0.3s ease;
   font-size: 17px;
 }
-.linksb {
-  padding: 7px;
+.linkfuncionalidades {
+  padding: 10px;
   color: #07034b;
   text-decoration: none;
+  transition: 0.3s ease;
+  font-size: 17px;
+}
+.linkfuncionalidades:hover {
+  transform: scale(1.1);
 }
 .links:hover {
   transform: scale(1.1);
@@ -562,7 +567,6 @@ a {
 
   * {
     max-width: 100%;
-    font-family: ro;
   }
   p {
     font-size: 20px;
@@ -602,6 +606,9 @@ a {
   .menu-toggle:checked ~ .navegaçao {
     max-height: 320px;
     padding: 10px 10px 20px;
+  }
+  .linkfuncionalidades {
+    display: none;
   }
   .links,
   .sobre {
