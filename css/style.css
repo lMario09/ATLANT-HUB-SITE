@@ -495,7 +495,7 @@ a {
   color: black;
   padding: 10px;
   border: 0.5px solid black;
-  border-radius: 9px;
+  border-radius: 30px;
   transition: 0.3s ease;
 }
 .voltar:hover {
@@ -563,6 +563,9 @@ a {
   * {
     max-width: 100%;
   }
+  p {
+    font-size: 20px;
+  }
   .cabeçalho {
     flex-direction: row;
     align-items: center;
@@ -596,7 +599,7 @@ a {
     align-items: center;
   }
   .menu-toggle:checked ~ .navegaçao {
-    max-height: 300px;
+    max-height: 320px;
     padding: 10px 10px 20px;
   }
   .links,
@@ -614,57 +617,56 @@ a {
     opacity: 1;
     transform: translateY(0);
   }
-  .sobre {
-    margin-top: 10px;
-    border-radius: 8px;
-  }
-  .linksb {
-    display: none;
+  .degrade {
+    width: 100%;
+    height: 70vh;
+    display: flex;
   }
   .Divisao1 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-wrap: nowrap;
     width: 95%;
   }
   .corpo {
     flex-direction: column;
     align-items: center;
   }
-.atlant {
-  width: 450px;
-  display: flex;
-  justify-content: center;
-  margin: 0;
-}
   .Titulo {
     width: 100%;
-    max-width: 500px;
-    padding: 15px;
+    padding: 20px;
     margin: 0;
   }
+  .titulo2 {
+    display: none;
+  }
   .beneficios {
-    width: 95%;
-    max-width: 500px;
+    width: 100%;
     padding: 15px;
-    margin: 0;
   }
   .Titulo h1 {
     font-size: 1.4rem;
     text-align: center;
   }
   .Titulo p,
-  .beneficios p {
+  .beneficios p, .diferenciais p {
     width: 100%;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     text-align: justify;
   }
-
-  .atlant img {
-    width: 100%;
-    max-width: 500px;
+  .beneficios h1, .diferenciais h1 {
+    font-size: 1.4rem;
   }
-
+.beneficiosdiv {
+  width: 60vw;
+}
+.beneficiosdiv p {
+  font-size: 0.7rem;
+}
+.beneficiosdiv h2, .diferencial h3 {
+  font-size: 1rem;
+}
   .diferenciais {
     flex-direction: column;
     align-items: center;
@@ -683,39 +685,35 @@ a {
     text-align: center;
   }
   .funcionalidades {
-    background-color: #f5f5f5;
-    width: 95%;
-    margin: 20px auto;
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    font-size: 16px;
-    border-radius: 9px;
-    box-shadow: 0px 0px 6px #a2a2a2;
-    align-items: center;
+    display: none;
   }
-  .listaFuncionalidades {
-    display: flex;
-    flex-direction: column;
+  .noticias {
+    width: 100%;
   }
-  .listas {
-    display: flex;
-    flex-direction: column;
-    padding-left: 20px;
-  }
-  .listas2 {
-    display: flex;
-    flex-direction: column;
-    padding-left: 20px;
-  }
-  .funcionalidades h2 {
-    font-size: 22px;
-  }
-
+.noticias h1 {
+  font-size: 1.4rem;
+  text-align: center;
+}
+.noticia1 {
+  width: 80%;
+}
+.noticia1 h2 {
+  font-size: 1rem;
+}
+.noticia1 p {
+  font-size: 0.7rem;
+}
+.equipe {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+.divisao {
+  width: 80%;
+}
   .apoio {
   background-color: #f5f5f5;
   width: 95%;
-  margin: 20px auto;
   padding: 30px;
   display: flex;
   flex-direction: column;

@@ -113,3 +113,9 @@ body {
   border-top: 1px solid #060440;
   font-size: 14px;
 }
+@media (max-width: 768px) {
+  
+  .noticia img {
+    width: 95%;
+  }
+}
