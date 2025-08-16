@@ -407,6 +407,7 @@ li::marker {
 }
 .equipe h1 {
   color: #f5f5f5;
+  text-align: center;
 }
 .blocos {
   width: 100%;
@@ -668,12 +669,14 @@ a {
   }
 .beneficiosdiv {
   width: 60vw;
+  height: 250px;
 }
 .beneficiosdiv p {
   font-size: 0.7rem;
 }
 .beneficiosdiv h2, .diferencial h3 {
   font-size: 1rem;
+  text-align: center;
 }
   .diferenciais {
     flex-direction: column;
@@ -714,7 +717,7 @@ a {
   flex-wrap: nowrap;
 }
 .divisao {
-  width: 80%;
+  width: 90%;
 }
   .apoio {
   background-color: #f5f5f5;
